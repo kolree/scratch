@@ -1,0 +1,78 @@
+:experimental:
+:source-highlighter: highlight.js
+
+
+# AsciiDoc
+
+## Helpful Resources
+
+https://docs.asciidoctor.org/asciidoc/latest/[Official Docs]
+
+Asciidoc is a parallel effort to Markdown and was started a couple of years earlier. It is more inclusive out of the box.
+
+https://github.com/git/git/tree/master/Documentation[Git documentation] is all asciidoc (but has txt extension)]
+
+Andorian spec is asciidoc.
+
+## Keyboard
+
+// 'kbd' macro requires 'experimental' document attribute
+kbd:[Cmd-T]
+kbd:[Cmd]+kbd:[T]
+
+
+
+
+## Examples
+### Line Separation
+Paragraphs are texts separated by a blank line. This is different than a line break.
+
+Line breaks are forced by either a \ at the end of a line (confusing) or by two spaces at the end of a line (invisible). Both of these are annoying in different ways. Maybe I need to learn to write without line breaks except between paragraphs. Also annoying is the fact that a trailing backslash before a blank line will be visible as a backslash. Why? This is a plus for the two space form.
+
+### Emphasis
+
+*bold* +
+_italics_ +
+[.line-through]#strike-through# +  
+#highlighted# +
+H~2~O. Subscripts! +
+y=x^2^. Superscripts!
+
+
+
+There is an underline emphasis in Asciidoc - but I will avoid it for the good reason Markdown leaves it out. It should be reserved for links.
+
+
+### Code
+
+This is `inline code` style.
+
+[source,bash]
+----
+$ cd work
+$ ls -a
+----
+
+[source,python]
+----
+import os
+
+----
+
+
+
+after blank line
+
+
+
+ This is also.
+        Hmmm
+    he said
+
+
+```
+This is a block of code set off by a code fence.
+Code line 2
+Code line 3
+```
+add examples of language highlighting inside code blocks
